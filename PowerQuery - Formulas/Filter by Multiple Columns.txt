@@ -1,0 +1,7 @@
+= Table.SelectRows(#"Changed Type", each [GONSTK] > 0 or [GONSTK] <> 1)
+
+
+= Table.SelectRows(#"Changed Type", each [Avg_7Day_sales - Copy] > 0 or [GONSTK] > 0 or [ITMFAC] > 0)
+
+
+List.Contains(Agr, [SUP_CODE]) and [COUNTRY] = "TX")
